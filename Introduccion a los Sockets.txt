@@ -1,0 +1,24 @@
+Programacion de Sockets en Python.
+
+Nos ayuda para la comunicacion entre 2 modulos, es una comunicacion serial entre dos puntos o varios nodos.
+Sockets: Es un elemento que utiliza el software para hacer la comunicacion con los protocolos de red. Comunicacion TCP/IP.
+
+Metodos para construir el programa (Sockets):
+- socket() -->Creacion de una puerta de Entrada y Salida.
+- bind() -->Asociaciar el ocket con una tarjeta de red.
+- listen() -->Coloca la construccion en modo Escuchar.
+- accept() -->Pone lo anterior en un modo de bloqueo (El sistema espera que algo suceda).
+- connect() -->Trata de conectar con un servidor (los atributos del servidor).
+- connect_ex()
+- send() -->Envia informacion.
+- recv() -->Resive informacion (es bloqueante), debe de haber una coneccion de resivir y enviar.
+- close() -->Cierra el socket.
+
+Doc: https://docs.python.org/3/library/socket.html
+
+socket.socket()
+
+Hay que ver el Diagrama para entender como se va a comunicar el Cliente y el Servidos (Procesos de los Nodos).
+
+Cliente es de 1:1
+Servidor 1:M (No es una comunicacion de punto a punto).
