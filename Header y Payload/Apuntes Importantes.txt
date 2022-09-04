@@ -1,0 +1,10 @@
+SERIALIZACION
+
+Hace rel bufer variable dependiendo el mensaje o archivos que resiva el Servidor.
+13(Payload)      Hola Mundo!!(Header)
+
+Lo quedebe hacer el servidor es leer primero el Payload para despues leer los n caracteres.
+
+
+
+-----Hasta esta version no funciona el cliente------
