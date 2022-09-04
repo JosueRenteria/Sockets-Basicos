@@ -1,5 +1,6 @@
 #Importar la libreria de los sockets.
 import socket
+from sqlite3 import connect
 
 HOST = "127.0.0.1" # Direccion del loopback
 PORT = 65123       # > 1023 (Puerto de Escucha)
@@ -29,5 +30,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             else:
                 #Envia algo al Servidor.
                 conn.sendall(data) #conn es es el socket cliente.
-                
+        
+        #Cerramos la conecion de Nuestro Cliente.
+        print(f"Desconectando a {addr}")
+        conn.close()
 
